@@ -37,7 +37,7 @@ ul {
         text-align:center;
 }
 
-ul li:hover {
+ul li::selection{
     text-decoration:line-through;
 }
 

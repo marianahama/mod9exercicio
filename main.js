@@ -11,13 +11,12 @@ form.addEventListener('submit', function (e) {
 
     let linha = '<li>';
     linha += `<li>${inputTarefa.value}</li>`;
-    //linha += `<td>${}</td>`;
 
     linhas += linha;
 
     const corpoLista =document.querySelector('li');
     corpoLista.innerHTML = linhas;
 
-   inputTarefa.value='';
-   
+inputTarefa.value='';
+
 });

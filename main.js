@@ -1,27 +1,24 @@
-const form =document.getElementById('agenda');
+const form =document.getElementById('tarefas');
 
 let linhas = '';
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const inputNomeContato=document.getElementById('nome-contato');
-    const inputNumeroTelefone=document.getElementById('numero-telefone');
+    const inputTarefa=document.getElementById('nome-tarefa');
 
     
 
-    let linha = '<tr>';
-    linha += `<td>${inputNomeContato.value}</td>`;
-    linha += `<td>${inputNumeroTelefone.value}</td>`;
+    let linha = '<li>';
+    linha += `<li>${inputTarefa.value}</li>`;
     //linha += `<td>${}</td>`;
     //linha += `<td>${}</td>`;
 
     linhas += linha;
 
-    const corpoTabela =document.querySelector('tbody');
-    corpoTabela.innerHTML = linhas;
-   // alert(`contato: ${inputNomeContato.value} -Telefone: ${inputNumeroTelefone.value}`);
+    const corpoLista =document.querySelector('li');
+    corpoLista.innerHTML = linhas;
 
-   inputNomeContato.value='';
-   inputNumeroTelefone.value='';
+   inputTarefa.value='';
+   
 });

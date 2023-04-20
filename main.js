@@ -12,7 +12,6 @@ form.addEventListener('submit', function (e) {
     let linha = '<li>';
     linha += `<li>${inputTarefa.value}</li>`;
     //linha += `<td>${}</td>`;
-    //linha += `<td>${}</td>`;
 
     linhas += linha;
 
